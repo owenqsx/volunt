@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>voluntary-event-domain-context</artifactId>
+    <artifactId>volunt-domain-generator</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -23,6 +23,28 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jdt</groupId>
+            <artifactId>org.eclipse.jdt.core</artifactId>
+            <version>${jdt-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.jface.text</artifactId>
+            <version>${jface-text.version}</version>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
 
 </project>

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yifanps</groupId>
+    <groupId>com.qisixiao</groupId>
     <artifactId>volunt</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -13,12 +13,37 @@
         <module>voluntary-event-domain-context</module>
         <module>voluntary-event-persistence-adapter-mysql</module>
         <module>voluntary-event-resource-adapter-springmvc</module>
+        <module>volunt-domain-generator</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>3.1.4</spring-boot.version>
+        <undertow.version>3.1.4</undertow.version>
+        <lombok.version>1.18.28</lombok.version>
+        <freemarker.version>2.3.32</freemarker.version>
+        <jdt-core.version>3.24.0</jdt-core.version>
+        <jface-text.version>3.24.0</jface-text.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+            <version>${undertow.version}</version>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
 
 </project>
